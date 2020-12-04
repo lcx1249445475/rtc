@@ -95,7 +95,7 @@ ABSL_CONST_INIT LogSink* LogMessage::streams_ RTC_GUARDED_BY(g_log_mutex_) =
 bool LogMessage::thread_, LogMessage::timestamp_;
 
 LogMessage::LogMessage(const char* file, int line, LoggingSeverity sev)
-    : LogMessage(file, line, sev, ERRCTX_NONE, 0) {}
+    : LogMessage(file, line, sev, ERRCTX_NONE, 0) {}  
 
 LogMessage::LogMessage(const char* file,
                        int line,
